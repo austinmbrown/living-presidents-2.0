@@ -1,0 +1,86 @@
+/* app css stylesheet */
+
+body {
+  background-color: #e1ddd9;
+  font-size: 18px;
+  font-family: 'Quattrocento', serif;
+  color:#564b47;
+  margin: 40px 40px;
+  text-align: center;
+}
+
+a:link, a:visited {text-decoration: none; color: inherit;}
+a:hover, a:active {text-decoration: underline;}
+
+h1 {
+  font-size: 3em;
+  text-align: left;
+}
+
+img {
+  border: 4px solid #564b47;
+  box-shadow: 4px 4px 4px #444;
+}
+
+#site-title {
+  width: 1030px;
+  margin: auto;
+}
+
+#controls {
+  width: 1000px;
+  margin: 5px auto;
+}
+
+#presidents {
+  height: 280px;
+  display: inline-block;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.pres {
+  float: left;
+  padding: 0px;
+  width: 178px;
+  overflow: hidden;
+}
+
+input[type=range] {
+  width: 1000px;
+}
+
+
+
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  margin-top: 0px;
+  position: relative;
+}
+.animate-repeat.ng-enter {
+  transition: opacity linear .1s .1s, width linear .3s;
+  opacity: 0;
+  width: 0px;
+}
+.animate-repeat.ng-enter.ng-enter-active {
+  transition: opacity linear .1s .1s, width linear .3s;
+  opacity: 1;
+  width: 178px;
+}
+.animate-repeat.ng-leave {
+  transition: opacity linear .1s .1s, width linear .3s;
+  opacity: 1;
+  width: 178px;
+}
+.animate-repeat.ng-leave.ng-leave-active {
+  transition: opacity linear .1s, width linear .3s .1s;
+  opacity: 0;
+  width: 0px;
+}
+/*.animate-repeat.ng-move {
+  opacity: 0.5;
+}
+.animate-repeat.ng-move.ng-move-active {
+  opacity: 1;
+}*/
+
